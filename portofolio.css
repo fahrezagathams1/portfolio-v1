@@ -1,0 +1,230 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#eef2f7;
+  padding:40px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:300px 1fr;
+  gap:25px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  background:#0f172a;
+  color:white;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid white;
+  margin-bottom:20px;
+}
+
+.job{
+  color:#94a3b8;
+  margin-bottom:20px;
+}
+
+.info{
+  text-align:left;
+  margin-top:30px;
+}
+
+.info p{
+  margin:15px 0;
+  font-size:14px;
+}
+
+.info i{
+  margin-right:10px;
+  color:#38bdf8;
+}
+
+/* SKILL */
+
+.skills{
+  margin-top:40px;
+  text-align:left;
+}
+
+.skill{
+  margin:20px 0;
+}
+
+.bar{
+  width:100%;
+  height:10px;
+  background:#1e293b;
+  border-radius:20px;
+  margin-top:8px;
+}
+
+.fill{
+  height:100%;
+  border-radius:20px;
+}
+
+.html{
+  width:90%;
+  background:#f97316;
+}
+
+.css{
+  width:75%;
+  background:#3b82f6;
+}
+
+.figma{
+  width:70%;
+  background:#a855f7;
+}
+
+/* CONTENT */
+
+.content{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h1{
+  margin-bottom:15px;
+  color:#0f172a;
+}
+
+.card p{
+  color:#475569;
+  line-height:1.8;
+}
+
+/* TIMELINE */
+
+.item{
+  margin-bottom:20px;
+  padding-left:20px;
+  border-left:3px solid #38bdf8;
+}
+
+.item span{
+  color:#38bdf8;
+  font-size:14px;
+}
+
+.project-card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.buttons{
+  margin-top:15px;
+}
+
+.buttons a{
+  text-decoration:none;
+  background:#2563eb;
+  color:white;
+  padding:10px 18px;
+  border-radius:8px;
+  margin-right:10px;
+}
+
+.foto-hd {
+    width: 100%;       /* Lebar fleksibel */
+    height: 400px;     /* Tinggi ditentukan */
+    object-fit: cover; /* Foto tetap proporsional & tajam, sisa foto akan terpotong rapi */
+}
+
+/* 1. Atur jarak (padding) di dalam kotak utama kartu */
+.mari-terhubung-card {
+    padding: 30px; /* Memberikan space lega di dalam kotak */
+}
+
+.mari-terhubung-card p {
+    margin-bottom: 24px; /* Jarak antara kalimat deskripsi dengan tombol di bawahnya */
+    color: #555;
+}
+
+/* 2. Mengatur barisan tombol agar punya space (Gap) */
+.social-links-container {
+    display: flex;
+    flex-wrap: wrap; /* Supaya kalau di HP, tombolnya otomatis turun rapi */
+    gap: 12px;       /* Jarak antar tombol (Space horizontal & vertikal) */
+}
+
+/* 3. Membuat tampilan link menjadi tombol modern */
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;       /* Spacing dalam tombol (atas-bawah, kiri-kanan) */
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;    /* Menghilangkan garis bawah link yang mengganggu */
+    border-radius: 8px;       /* Sudut tombol agak membulat modern */
+    transition: all 0.3s ease; /* Efek animasi halus saat di-hover */
+}
+
+/* Jarak khusus antara ICON dengan TEKS di dalam tombol */
+.social-btn i {
+    margin-right: 8px;        /* Memberi space agar icon tidak menempel ke teks */
+    font-size: 16px;          /* Membuat ukuran icon sedikit lebih proporsional */
+}
+
+/* 4. Pewarnaan masing-masing tombol (Menyesuaikan tema gelap-terang di portofoliomu) */
+.preview-btn {
+    background-color: #1e40af; /* Biru tegas */
+    color: white;
+}
+
+.github-btn {
+    background-color: #24292e; /* Hitam khas GitHub */
+    color: white;
+}
+
+.linkedin-btn {
+    background-color: #0077b5; /* Biru LinkedIn */
+    color: white;
+}
+
+.instagram-btn {
+    background-color: #e1306c; /* Pink/Merah Instagram */
+    color: white;
+}
+
+/* 5. Efek Hover Profesional (Tombol sedikit bereaksi saat disentuh mouse) */
+.social-btn:hover {
+    transform: translateY(-2px); /* Tombol sedikit naik ke atas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Bayangan halus di bawah tombol */
+    opacity: 0.9; /* Sedikit memudar halus */
+}
