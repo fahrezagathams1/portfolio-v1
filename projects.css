@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Warna gelap modern */
+    color: #f8fafc;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Bagian Atas / Header */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8; /* Warna biru cerah */
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* Wadah Kotak Proyek */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Desain Satu Kotak Proyek (Card) */
+.project-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Efek naik sedikit saat disentuh mouse */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #f1f5f9;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Label Teknologi (Tags) */
+.tags {
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: #38bdf820;
+    color: #38bdf8;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+/* Tombol Aksi */
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-demo {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.btn-demo:hover {
+    background-color: #7dd3fc;
+}
+
+.btn-code {
+    border: 1px solid #475569;
+    color: #cbd5e1;
+}
+
+.btn-code:hover {
+    background-color: #334155;
+}
+
+/* Tombol Kembali ke Utama */
+.back-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-back {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.btn-back:hover {
+    color: #38bdf8;
+}
